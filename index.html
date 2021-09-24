@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;500;600&display=swap" rel="stylesheet">
+    <title>Countdown Timer</title>
+</head>
+<body>
+<div class="outer">
+    <div class="title">
+        Set a <span id="diff"> Countdown </span> timer!
+    </div>
+    <hr id="line">
+    <div class="outerbox">
+        <div class="img">
+        
+            <img src="./timebg.svg" id="timeimg">
+        </div>
+        <div class="inner">
+            <div id="container">
+                <div class="boxholder">
+                    <div class="box1">
+                        <div class="bh">
+                            <p id="hour-label" class="label">Hours</p>
+                        </div>
+                        <p id="p" class="semicol"></p>
+                        <div class="bh">
+                            <p id="min-label" class="label">Minutes</p>
+                        </div>
+                        <p id="p" class="semicol"></p>
+                        <div class="bh">
+                            <p id="sec-label" class="label">Seconds</p>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                   <div class="box2">
+                       <div class="bh">
+                           <input type="number" id="hour" max="99" min="0" value="0" class="time">
+                        </div>
+                        <p id="p1" class="semicol">:</p>
+                       <div class="bh">
+                        <input type="number" id="minute" max="60" min="0" value="0" class="time">
+                       </div>
+                       <p id="p2" class="semicol">:</p>
+                       <div class="bh">
+                        <input type="number" id="seconds" max="60" min="0" value="0" class="time">
+                       </div>
+                   </div>
+            <div id="output">
+                
+            </div>
+                </div>
+            </div>
+            <div class="warn">
+                <p>(Please reset after timeout*)</p>
+            </div>
+            <div class="container2">
+                <div class="box3">
+                    <button id="start" class="btn">Start</button>
+                    <button id="stop" class="btn">Stop</button>
+                    <button id="reset" class="btn">Reset</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</div>
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
